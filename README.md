@@ -76,11 +76,12 @@ Contact:
    - Each contact is associated with one user (Many-to-One relationship between contact and User).
 
 11. **Functions:**
-1.	Login / Signup
+    
+- Login / Signup
    - Verify user credentials against the User table.
-2. 	Logout
+- 	Logout
    - End the user session.
-3. 	Add Contact
+- 	Add Contact
    - Insert a new contact record into the contact table.
 4.	Update Contact
    - Update an existing contact record into the contact table.
