@@ -1,13 +1,14 @@
-#Introduction
-##Purpose of this document
+Introduction
+1. Purpose of this document
 The purpose of this document is to provide a comprehensive overview of the technical design, component details, and database design for the Contact Management System project. It aims to capture the scope of the project, outline the assumptions made during the design process, identify potential risks, and highlight any dependencies that may impact the successful implementation of the system. This document serves as a reference for developers, stakeholders, and project managers involved in the Contact Management System project.
 
-##Project overview
+2. Project overview
 A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
 
 2.0 Users Functions:
 2.1 Login, Signup and Logout:
 The user's login feature ensures secure access to the system, requiring authentication to prevent unauthorized access. Spring Security ensures the authentication, authorization 	and access control for the user.  Upon successful authentication, the user gains access to app privileges, enabling them to access their digital hub. Logout functionality 		terminates the admin's session, enhancing security by preventing unauthorized access in shared environments.
+
 2.2 Add Contact:
 Users have the authority to add new contacts to the platform. This functionality involves inputting contact details such as name, work at, location, phone number, description, 	profile picture any other pertinent information.
 2.3 View Contact:
@@ -17,33 +18,31 @@ In instances where a specific contact is no longer required or deemed irrelevant
 2.5 Update Contact
 In instances where a specific contact needs to be updated by the user. The update contact functionality ensures that outdated information is updated without any effort, 		maintaining the platform's integrity, and enhancing user experience.
 
-2.0	Solution Summary
-2.1	Scope
+2.0 Solution Summary
+2.1 Scope
 The scope of this web application project includes developing a user-friendly platform for users where they can manage their contacts. The application will have user registration and authentication, user profile management, an admin dashboard for managing contacts and  responsive design for cross-device compatibility and robust security measures. The project aims to deliver a comprehensive solution that provides a seamless user experience, scalability to manage a large user base, and adherence to industry standards. This web application facilitates the user with a common space where they can organize their contacts. 
 
-
-3.0	Assumptions
-		Here are some assumptions for a contact management system project:
-		1.	The system will be able to handle a large number of contacts without performance issues.
-		2.	Users will have consistent and reliable internet connectivity to access the system.
-		3.	The system will be user-friendly and intuitive, with minimal training required for end-users.
-		4.	The data entered into the system will be secure and protected from unauthorized access.
-		5.	The system will be able to integrate with other software applications used by the organization.
-		6.	The system will be able to handle international characters and formats for names and addresses.
-		7.	The system will have a backup and recovery plan in place to protect against data loss.
-		8.	The system will comply with relevant data privacy regulations.
-		9.	The system will be scalable to accommodate future growth of the organization's contact database.
-		10.	The system will have adequate technical support and maintenance resources available.
-
+3.0 Assumptions
+	Here are some assumptions for a contact management system project:
+	1.	The system will be able to handle a large number of contacts without performance issues.
+	2.	Users will have consistent and reliable internet connectivity to access the system.
+	3.	The system will be user-friendly and intuitive, with minimal training required for end-users.
+	4.	The data entered into the system will be secure and protected from unauthorized access.
+	5.	The system will be able to integrate with other software applications used by the organization.
+	6.	The system will be able to handle international characters and formats for names and addresses.
+	7.	The system will have a backup and recovery plan in place to protect against data loss.
+	8.	The system will comply with relevant data privacy regulations.
+	9.	The system will be scalable to accommodate future growth of the organization's contact database.
+	10.	The system will have adequate technical support and maintenance resources available.
 
 2.3	Dependencies
-1.	Database Design and Development: The contact management system will likely require a database to store contact information. Therefore, the database design and development task 				will need to be completed before contact data can be added to the system.
-2.	User Interface (UI) Design: The UI design task will involve creating the visual layout and user experience of the contact management system. This task will need to be completed before the system can be developed.
-3.	System Development: The system development task will involve building the actual contact management system based on the database design and UI specifications. This task will depend on the completion of the database design and UI design tasks.
-4.	Testing: The testing task will involve verifying that the contact management system is working as expected. This task will depend on the completion of the system development task.
-5.	Deployment: The deployment task will involve making the contact management system available to users. This task will depend on the completion of the testing task.
-6.	Training: The training task will involve teaching users how to use the contact management system. This task may depend on the completion of the system development and testing tasks, as well as the availability of users to participate in training sessions.
-7.	Maintenance: The maintenance task will involve fixing any issues that arise with the contact management system and making updates as needed. This task will depend on the availability of users to report issues and the availability of developers to make fixes.
+	1.	Database Design and Development: The contact management system will likely require a database to store contact information. Therefore, the database design and development task 				will need to be completed before contact data can be added to the system.
+	2.	User Interface (UI) Design: The UI design task will involve creating the visual layout and user experience of the contact management system. This task will need to be completed before the system can be developed.
+	3.	System Development: The system development task will involve building the actual contact management system based on the database design and UI specifications. This task will depend on the completion of the database design and UI design tasks.
+	4.	Testing: The testing task will involve verifying that the contact management system is working as expected. This task will depend on the completion of the system development task.
+	5.	Deployment: The deployment task will involve making the contact management system available to users. This task will depend on the completion of the testing task.
+	6.	Training: The training task will involve teaching users how to use the contact management system. This task may depend on the completion of the system development and testing tasks, as well as the availability of users to participate in training sessions.
+	7.	Maintenance: The maintenance task will involve fixing any issues that arise with the contact management system and making updates as needed. This task will depend on the availability of users to report issues and the availability of developers to make fixes.
 
 2.4	Risks
 1.	Cost Overruns: One risk is that the project may exceed the budgeted cost due to unexpected expenses, such as additional features or functionality, customization, or integration with other systems.
