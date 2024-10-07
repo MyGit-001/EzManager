@@ -5,7 +5,7 @@ The purpose of this document is to provide a comprehensive overview of the techn
 2. Project overview
 A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
 
-#Users Functions#:
+#Users Functions:
 2.1 Login, Signup and Logout:
 The user's login feature ensures secure access to the system, requiring authentication to prevent unauthorized access. Spring Security ensures the authentication, authorization 	and access control for the user.  Upon successful authentication, the user gains access to app privileges, enabling them to access their digital hub. Logout functionality 		terminates the admin's session, enhancing security by preventing unauthorized access in shared environments.
 
