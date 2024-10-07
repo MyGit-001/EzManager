@@ -52,12 +52,12 @@ System design is the process of defining the elements of a system such as the ar
 >Database: Stores contacts and user data persistently. It can be a relational database like MySQL.
 
 9. **Database Design**
-Data Model
+Data Model : 
 ER Diagram stands for Entity Relationship Diagram, also known as ERD, is a diagram that displays the relationship of entity sets stored in a database. In other words, ER diagrams help to explain the logical structure of databases. ER diagrams are created based on three basic concepts: entities, attributes and relationships.ER Diagrams contain different symbols that use rectangles to represent entities, ovals to define attributes and diamond shapes to represent relationships. At first look, an ER diagram looks very similar to the flowchart. However, ER Diagram includes many specialized symbols, and its meanings make this model unique. The purpose of ER Diagram is to represent the entity framework infrastructure.
                    
 For a Digital management system, we are using a relational database model.
 Tables:
-User:
+-User:
    - user_id (Primary Key)
    - name
    - password
@@ -72,8 +72,8 @@ Contact:
    - other relevant event details
 
 10. **Relationships:**
-Each user can have multiple contacts (One-to-Many relationship between User and contact).
-Each contact is associated with one user (Many-to-One relationship between contact and User).
+   - Each user can have multiple contacts (One-to-Many relationship between User and contact).
+   - Each contact is associated with one user (Many-to-One relationship between contact and User).
 
 11. **Functions:**
 1.	Login / Signup
