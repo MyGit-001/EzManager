@@ -5,20 +5,20 @@ The purpose of this document is to provide a comprehensive overview of the techn
 2. Project overview
 A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
 
-3, Users Functions:
+3. Users Functions:
 1. Login, Signup and Logout:
 The user's login feature ensures secure access to the system, requiring authentication to prevent unauthorized access. Spring Security ensures the authentication, authorization 	and access control for the user.  Upon successful authentication, the user gains access to app privileges, enabling them to access their digital hub. Logout functionality 		terminates the admin's session, enhancing security by preventing unauthorized access in shared environments.
 
-2 Add Contact:
+2. Add Contact:
 Users have the authority to add new contacts to the platform. This functionality involves inputting contact details such as name, work at, location, phone number, description, 	profile picture any other pertinent information.
 
-2.3 View Contact:
+3. View Contact:
 Users can browse through a comprehensive list of contacts available on the platform added by them. The user can also search for a specific contact he/she is looking for. This 		functionality provides user with feature of availability.
 
-2.4 Delete Contact:
+4. Delete Contact:
 In instances where a specific contact is no longer required or deemed irrelevant, the user can remove them from the platform. The delete contact functionality ensures that 		outdated or erroneous information is promptly eliminated, maintaining the platform's integrity, and enhancing user experience.
 
-2.5 Update Contact
+5. Update Contact
 In instances where a specific contact needs to be updated by the user. The update contact functionality ensures that outdated information is updated without any effort, 		maintaining the platform's integrity, and enhancing user experience.
 
 2.0 Solution Summary
