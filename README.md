@@ -39,8 +39,8 @@ The scope of this web application project includes developing a user-friendly pl
 	10.	The system will have adequate technical support and maintenance resources available.
 
 2.3	Dependencies
-	1.	Database Design and Development: The contact management system will likely require a database to store contact information. Therefore, the database design and development task 				will need to be completed before contact data can be added to the system.
-	2.	User Interface (UI) Design: The UI design task will involve creating the visual layout and user experience of the contact management system. This task will need to be completed before the system can be developed.
+	*Database Design and Development: The contact management system will likely require a database to store contact information. Therefore, the database design and development task 				will need to be completed before contact data can be added to the system.
+	*User Interface (UI) Design: The UI design task will involve creating the visual layout and user experience of the contact management system. This task will need to be completed before the system can be developed.
 	3.	System Development: The system development task will involve building the actual contact management system based on the database design and UI specifications. This task will depend on the completion of the database design and UI design tasks.
 	4.	Testing: The testing task will involve verifying that the contact management system is working as expected. This task will depend on the completion of the system development task.
 	5.	Deployment: The deployment task will involve making the contact management system available to users. This task will depend on the completion of the testing task.
