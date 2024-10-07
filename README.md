@@ -45,13 +45,13 @@ The schematic diagram for a Contact Management web application built using Sprin
 System design is the process of defining the elements of a system such as the architecture, modules and components, the different interfaces of those components and the data that goes through that system. It is meant to satisfy specific needs and requirements of a business or organization through the engineering of a coherent and well-running system. It implies a systematic approach to the design of a system. It may take a bottom- up or top-down approach, but either way the process is systematic wherein it takes into account all related variables of the system that needs to be created from the architecture to the required hardware and software, right down to the data and how it travels and transforms throughout its travel through the system.
 
 8. **Proposed design**
--Frontend: The user interface where users interact with the system. It includes login/logout forms, contact listing, and deletion interfaces. 
--Controller: Receives incoming requests from the frontend, delegates tasks to the appropriate service, and returns responses. It handles authentication, authorization, and routing.
--Service: Contains the business logic of the application. It coordinates data flow between the controller and the repository. It handles tasks like adding contacts, deleting contacts, and user authentication.
--Repository: Manages data access and persistence. It communicates with the database to perform CRUD operations (Create, Read, Update, Delete) for contacts and user data.
--Database: Stores contacts and user data persistently. It can be a relational database like MySQL.
+ -Frontend: The user interface where users interact with the system. It includes login/logout forms, contact listing, and deletion interfaces. 
+ -Controller: Receives incoming requests from the frontend, delegates tasks to the appropriate service, and returns responses. It handles authentication, authorization, and 		routing.
+ -Service: Contains the business logic of the application. It coordinates data flow between the controller and the repository. It handles tasks like adding contacts, deleting 		contacts, and user authentication.
+ -Repository: Manages data access and persistence. It communicates with the database to perform CRUD operations (Create, Read, Update, Delete) for contacts and user data.
+ -Database: Stores contacts and user data persistently. It can be a relational database like MySQL.
 
-9. **Database Design**
+10. **Database Design**
 Data Model : 
 ER Diagram stands for Entity Relationship Diagram, also known as ERD, is a diagram that displays the relationship of entity sets stored in a database. In other words, ER diagrams help to explain the logical structure of databases. ER diagrams are created based on three basic concepts: entities, attributes and relationships.ER Diagrams contain different symbols that use rectangles to represent entities, ovals to define attributes and diamond shapes to represent relationships. At first look, an ER diagram looks very similar to the flowchart. However, ER Diagram includes many specialized symbols, and its meanings make this model unique. The purpose of ER Diagram is to represent the entity framework infrastructure.
                    
