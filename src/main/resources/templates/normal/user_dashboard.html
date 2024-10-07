@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>this is home page</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="card">
+				<div class="card-body my-5" style="background-color: lightgrey;">
+					<div class="container text-center">
+						<img src="/img/1915648.png" style="height: 300px; width: 300px"
+							class="my_profile_picture" 							
+								alt="profile photo" />
+					</div>
+
+
+
+					<div class="text-center">
+						<a th:href="@{/user/add-contact}"
+						class="btn btn-primary mt-4 btn text-uppercase">Add A Friend</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+        $(document).ready(() => {
+          $(".item").removeClass("active");
+          $("#home-link").addClass("active");
+        });
+      </script>
+	</section>
+</body>
+</html>

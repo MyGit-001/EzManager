@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>this is home page</title>
+	<style>
+		.img-fluid {
+			height: 500px;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-6 mt-5" >
+					<img src="/img/register_1.jpg" alt="Image" class="img-fluid" style="height: 508px;">
+				</div>
+				<div class="col-md-6 mt-5">
+					<div class="my-card" style="margin-left: -30px; background-color: lightgrey;">
+						<div th:if="${session.message}" th:classappend="${session.message.type}" class="alert"
+							role="alert">
+							<p class="text-center" th:text="${session.message.content}"></p>
+							<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+						</div>
+						<h1 class="text-center text-info">Register Here</h1>
+						<form novalidate action="" th:action="@{/do_register}" method="post" th:object="${user}">
+							<!-- name field -->
+							<div class="form-group">
+								<input name="name" type="text" class="form-control text-info" id="name_field"
+									aria-describedby="emailHelp" placeholder="Your Name" required
+									th:value="${user.name}" />
+								<div class="invalid-feedback" th:each="e : ${#fields.errors('name')}" th:text="${e}">
+								</div>
+							</div>
+							<!-- email field -->
+							<div class="form-group">
+								<input name="email" type="email" class="form-control text-info" id="email_field"
+									aria-describedby="emailHelp" placeholder="Your Email" required
+									th:value="${user.email}" />
+							</div>
+							<!-- password field -->
+							<div class="form-group">
+								<input name="password" type="password" class="form-control text-info"
+									id="password_field" aria-describedby="emailHelp" placeholder="Your Password"
+									required />
+							</div>
+							<!-- user about field -->
+							<div class="form-group">
+								<textarea name="about" th:text="${user.about}"
+									placeholder="Enter something about yourself" rows="4"
+									class="form-control text-info"></textarea>
+							</div>
+							<div class="custom-file inline-block">
+								<label>Choose profile image :  </label>
+								<input type="file" name="imageUrl" class="text-center"/>
+							</div>
+							<!-- terms and condition agreement -->
+							<div class="form-group form-check text-center">
+								<input type="checkbox" name="agreement" class="form-check-input" id="agreement" />
+								<label for="agreement" class="text-info">Accept terms and conditions</label>
+							</div>
+							<!-- profile picture field -->
+							<div class="container text-center">
+								<button type="submit" class="btn btn-info text-white">
+									Submit
+								</button>
+								<button type="reset" class="btn btn-warning ">
+									Reset
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
