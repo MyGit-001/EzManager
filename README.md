@@ -1,9 +1,9 @@
 **Introduction**
 1. **Purpose of this document**
-The purpose of this document is to provide a comprehensive overview of the technical design, component details, and database design for the Contact Management System project. It aims to capture the scope of the project, outline the assumptions made during the design process, identify potential risks, and highlight any dependencies that may impact the successful implementation of the system. This document serves as a reference for developers, stakeholders, and project managers involved in the Contact Management System project.
+-The purpose of this document is to provide a comprehensive overview of the technical design, component details, and database design for the Contact Management System project. It aims to capture the scope of the project, outline the assumptions made during the design process, identify potential risks, and highlight any dependencies that may impact the successful implementation of the system. This document serves as a reference for developers, stakeholders, and project managers involved in the Contact Management System project.
 
-2. ** Project overview**
-A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
+2. **Project overview**
+-A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
 
 3. **Users Functions:**
 > Login, Signup and Logout:
