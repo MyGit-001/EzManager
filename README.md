@@ -57,13 +57,13 @@ ER Diagram stands for Entity Relationship Diagram, also known as ERD, is a diagr
                    
 For a Digital management system, we are using a relational database model.
 Tables:
--User:
+1) User:
    - user_id (Primary Key)
    - name
    - password
    - role (Admin/User)
    - other relevant user details
-Contact:
+2) Contact:
    - contact_id (Primary Key)
    - name
    - work At
