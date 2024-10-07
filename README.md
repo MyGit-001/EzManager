@@ -5,19 +5,17 @@
   1.2	Project overview
       A contact management system web project serves as a centralized platform for organizing, coordinating, and managing events efficiently. It typically consists of two main user roles: admin and user. The admin possesses overwhelming control and authority over the system, Admin has the authority over the user’s account.  While users has the ability to add new add contacts, view them, search for them and delete them. Let's delve into the purpose and functionality of each component within this system.
 
-2.0	Users Functions:
+2.0 Users Functions:
 	2.1 Login, Signup and Logout:
-			The user's login feature ensures secure access to the system, requiring authentication to prevent unauthorized access. Spring Security ensures the authentication, authorization 				and access control for the user.  Upon successful authentication, the user gains access to app privileges, enabling them to access their digital hub. Logout functionality 			 
- 			terminates the 	admin's session, enhancing security by preventing unauthorized access in shared environments.
+	The user's login feature ensures secure access to the system, requiring authentication to prevent unauthorized access. Spring Security ensures the authentication, authorization 	and access control for the user.  Upon successful authentication, the user gains access to app privileges, enabling them to access their digital hub. Logout functionality 		terminates the admin's session, enhancing security by preventing unauthorized access in shared environments.
 	2.2 Add Contact:
-			Users have the authority to add new contacts to the platform. This functionality involves inputting contact details such as name, work at, location, phone number, description, 	
- 			profile picture any other pertinent information.
+	Users have the authority to add new contacts to the platform. This functionality involves inputting contact details such as name, work at, location, phone number, description, 	profile picture any other pertinent information.
 	2.3 View Contact:
-			Users can browse through a comprehensive list of contacts available on the platform added by them. The user can also search for a specific contact he/she is looking for. This 			 		functionality provides user with feature of availability.
-	2.4	Delete Contact:
-			In instances where a specific contact is no longer required or deemed irrelevant, the user can remove them from the platform. The delete contact functionality ensures that 			 			outdated or erroneous information is promptly eliminated, maintaining the platform's integrity, and enhancing user experience.
-	2.5	Update Contact
-			In instances where a specific contact needs to be updated by the user. The update contact functionality ensures that outdated information is updated without any effort, 				 				maintaining the platform's integrity, and enhancing user experience.
+	Users can browse through a comprehensive list of contacts available on the platform added by them. The user can also search for a specific contact he/she is looking for. This 		functionality provides user with feature of availability.
+	2.4 Delete Contact:
+	In instances where a specific contact is no longer required or deemed irrelevant, the user can remove them from the platform. The delete contact functionality ensures that 		outdated or erroneous information is promptly eliminated, maintaining the platform's integrity, and enhancing user experience.
+	2.5 Update Contact
+	In instances where a specific contact needs to be updated by the user. The update contact functionality ensures that outdated information is updated without any effort, 		maintaining the platform's integrity, and enhancing user experience.
 
 2.0	Solution Summary
 2.1	Scope
@@ -65,8 +63,8 @@ System design is the process of defining the elements of a system such as the ar
 
 4.1	Proposed design
 
-	Frontend: The user interface where users interact with the system. It includes login/logout forms, contact listing, and deletion interfaces. 
-	Controller: Receives incoming requests from the frontend, delegates tasks to the appropriate service, and returns responses. It handles authentication, authorization, and routing.
+4.1.	Frontend: The user interface where users interact with the system. It includes login/logout forms, contact listing, and deletion interfaces. 
+2.	Controller: Receives incoming requests from the frontend, delegates tasks to the appropriate service, and returns responses. It handles authentication, authorization, and routing.
 	Service: Contains the business logic of the application. It coordinates data flow between the controller and the repository. It handles tasks like adding contacts, deleting contacts, and user authentication.
 	Repository: Manages data access and persistence. It communicates with the database to perform CRUD operations (Create, Read, Update, Delete) for contacts and user data.
 	Database: Stores contacts and user data persistently. It can be a relational database like MySQL.
