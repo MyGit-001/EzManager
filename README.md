@@ -78,14 +78,14 @@ Contact:
 11. **Functions:**
     
 - Login / Signup
-   - Verify user credentials against the User table.
+   -- Verify user credentials against the User table.
 - 	Logout
-   - End the user session.
+   -- End the user session.
 - 	Add Contact
-   - Insert a new contact record into the contact table.
-4.	Update Contact
-   - Update an existing contact record into the contact table.
-5.	Delete Event
-   - Remove a contact record from the table based on contact obj.
-6.	User Settings
-   - A user can change or update his/her password in the setting, he can also update his profile picture.
+   -- Insert a new contact record into the contact table.
+-	Update Contact
+   -- Update an existing contact record into the contact table.
+-	Delete Event
+   -- Remove a contact record from the table based on contact obj.
+-	User Settings
+   -- A user can change or update his/her password in the setting, he can also update his profile picture.
