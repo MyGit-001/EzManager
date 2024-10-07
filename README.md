@@ -18,7 +18,7 @@ Users can browse through a comprehensive list of contacts available on the platf
 > Delete Contact:
 In instances where a specific contact is no longer required or deemed irrelevant, the user can remove them from the platform. The delete contact functionality ensures that 		outdated or erroneous information is promptly eliminated, maintaining the platform's integrity, and enhancing user experience.
 
-> Update Contact
+> Update Contact: 
 In instances where a specific contact needs to be updated by the user. The update contact functionality ensures that outdated information is updated without any effort, 		maintaining the platform's integrity, and enhancing user experience.
 
 4. **Solution Summary**
