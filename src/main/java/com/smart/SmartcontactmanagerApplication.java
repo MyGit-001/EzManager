@@ -9,8 +9,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class SmartcontactmanagerApplication implements CommandLineRunner  {
 	
-	@Autowired
-	private BCryptPasswordEncoder bryBCryptPasswordEncoder;
+	//@Autowired
+	//private BCryptPasswordEncoder bryBCryptPasswordEncoder;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SmartcontactmanagerApplication.class, args);

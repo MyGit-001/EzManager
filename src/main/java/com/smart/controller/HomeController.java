@@ -59,7 +59,8 @@ public class HomeController {
 			user.setRole("ROLE_USER");
 			user.setEnabled(true);
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
-			User result = this.userRepository.save(user);
+
+            User result = this.userRepository.save(user);
 
 			model.addAttribute("user", new User());
 			session.setAttribute("message", new Message("Successfully Registered !!", "alert-success"));

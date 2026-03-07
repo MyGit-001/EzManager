@@ -30,10 +30,10 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 	}
 
 	  
-	  @Bean public BCryptPasswordEncoder passwordEncoder() { 
+	  @Bean public BCryptPasswordEncoder passwordEncoder() {
 		  return new BCryptPasswordEncoder();
 	  }
-	 
+
 	
 	/*
 	 * @Bean public PasswordEncoder passwordEncoder() { return
