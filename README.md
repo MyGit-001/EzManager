@@ -89,3 +89,61 @@ Tables:
    -- Remove a contact record from the table based on contact obj.
 -	User Settings
    -- A user can change or update his/her password in the setting, he can also update his profile picture.
+
+
+	# EzManager - Digital Contact Management System
+
+## 📖 Introduction
+EzManager is a centralized web-based Contact Management System designed for organizing, coordinating, and managing personal and professional contacts efficiently[cite: 2]. This application provides a seamless user experience with responsive design, cross-device compatibility, and robust backend security[cite: 2].
+
+## ✨ Features
+The system supports distinct user roles (Admin and User) with the following core functionalities[cite: 2]:
+
+*   **Secure Authentication:** User login, signup, and logout functionalities secured by Spring Security to ensure authentication, authorization, and role-based access control[cite: 2].
+*   **Add Contacts:** Users can create new contacts by inputting details such as name, workplace, location, phone number, description, and a profile picture[cite: 2].
+*   **View & Search:** Users can browse a comprehensive list of their saved contacts and utilize a search functionality to quickly find specific individuals[cite: 2].
+*   **Update Contacts:** Seamless updating of contact information to maintain an accurate and current digital recordbook[cite: 2].
+*   **Delete Contacts:** Users can safely remove outdated or irrelevant contacts to maintain data integrity[cite: 2].
+*   **User Profile Management:** Users can manage their account settings, update passwords, and change their profile pictures[cite: 2].
+
+## 🛠️ Tech Stack
+*   **Backend:** Java, Spring Boot, Spring Security[cite: 2]
+*   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, Thymeleaf (Template Engine)[cite: 2]
+*   **Database:** MySQL[cite: 2]
+*   **Architecture:** MVC (Model-View-Controller), RESTful routing[cite: 2]
+
+## 🏗️ System Architecture
+The application follows a systematic, top-down MVC design pattern to ensure clean separation of concerns[cite: 2]:
+
+1.  **Frontend (View):** The user interface built with Bootstrap and Thymeleaf where users interact with the system (login forms, contact listings, etc.)[cite: 2].
+2.  **Controller:** Receives incoming HTTP requests from the frontend, handles routing, and delegates business tasks[cite: 2].
+3.  **Service Layer:** Contains the core business logic, coordinating data flow between the controllers and repositories[cite: 2].
+4.  **Repository (DAO):** Manages data access and persistence, communicating with the database to perform CRUD operations[cite: 2].
+5.  **Database:** A relational MySQL database for persistent storage[cite: 2].
+
+## 🗄️ Database Design
+The system utilizes a relational database model structured around two primary entities[cite: 2]:
+
+**User Table**[cite: 2]
+*   `user_id` (Primary Key)
+*   `name`
+*   `password`
+*   `role` (Admin/User)
+*   `image` / `other details`
+
+**Contact Table**[cite: 2]
+*   `contact_id` (Primary Key)
+*   `name`
+*   `work_at`
+*   `description`
+*   `image` / `other details`
+
+**Relationships:**
+*   **One-to-Many:** Each User can have multiple Contacts[cite: 2].
+*   **Many-to-One:** Each Contact is associated with exactly one User[cite: 2].
+
+## 📌 Project Scope & Assumptions
+*   **Performance:** Designed to handle a large volume of contacts without performance degradation[cite: 2].
+*   **Security:** Data is securely protected from unauthorized access, utilizing session management and encrypted credentials[cite: 2].
+*   **Scalability:** The architecture accommodates future growth of the contact database[cite: 2].
+*   **Accessibility:** Requires consistent internet connectivity and supports international character formats for global names and addresses[cite: 2].
