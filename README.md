@@ -1,7 +1,7 @@
 # EzManager - Digital Contact Management System
 
 ## 📖 Introduction
-EzManager is a centralized web-based Contact Management System designed for organizing, coordinating, and managing personal and professional contacts efficiently. This application provides a seamless user experience with responsive design, cross-device compatibility, and robust backend security.
+EzManager is a full-stack digital record-keeping platform using Spring Boot, Spring MVC, and Thymeleaf. Managed data persistence with Spring Data JPA and MySQL with normalized schema design. Secured the application with Spring Security, implementing RBAC, BCrypt password hashing, and a custom login flow.
 
 ## ✨ Features
 The system supports distinct user roles (Admin and User) with the following core functionalities:
