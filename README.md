@@ -1,4 +1,4 @@
-# EzManager - Digital Contact Management System
+# EzManager - A Digital Recordbook
 
 ## 📖 Introduction
 EzManager is a full-stack digital record-keeping platform using Spring Boot, Spring MVC, and Thymeleaf. Managed data persistence with Spring Data JPA and MySQL with normalized schema design. Secured the application with Spring Security, implementing RBAC, BCrypt password hashing, and a custom login flow.
